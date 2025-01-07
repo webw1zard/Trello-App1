@@ -91,7 +91,7 @@ const App: React.FC = () => {
         {["todo", "inProgress", "done"].map((status) => (
           <div
             key={status}
-            className="col-4"
+            className="col-4 shadow-lg"
             onDragOver={onDragOver}
             onDrop={(event) =>
               onDrop(event, status as "todo" | "inProgress" | "done")
